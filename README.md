@@ -1,0 +1,3 @@
+# Incorrect Average Salary Comparison in WHERE Clause
+This SQL query attempts to find employees in the Sales department whose salaries exceed the average salary. However, it contains a common error: using an aggregate function (AVG()) directly within the WHERE clause. Aggregate functions operate on groups of rows, not individual rows, leading to a syntax error.
+The solution demonstrates the correct approach, using a subquery to calculate the average salary separately before comparing it in the WHERE clause.
